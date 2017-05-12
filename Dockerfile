@@ -32,8 +32,8 @@ RUN git clone https://github.com/yyuu/pyenv.git /root/.pyenv
 ENV HOME  /root/
 ENV PYENV_ROOT $HOME/.pyenv
 ENV PATH $PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH
-RUN /root/.pyenv/bin/pyenv install 3.5.0 \
- && /root/.pyenv/bin/pyenv global 3.5.0 \
+RUN /root/.pyenv/bin/pyenv install 3.5.2 \
+ && /root/.pyenv/bin/pyenv global 3.5.2 \
  && python --version \
  && pip install ryu \
  && pip install tinyrpc
